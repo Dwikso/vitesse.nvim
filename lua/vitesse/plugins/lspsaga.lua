@@ -13,7 +13,6 @@ return function(opts, value)
   Group.link("DiagnosticWarnBorder", groups.Warn)
   Group.link("DiagnosticHintBorder", groups.Hint)
   Group.link("DiagnosticInfoBorder", groups.Info)
-  Group.link("SagaWinbarSep", colors.yellow)
 
   if opts.lspsaga_border_follow_float_background then
     Group.new("SagaBorder", normal.float_bg, normal.float_bg)
