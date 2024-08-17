@@ -257,10 +257,10 @@ function M.load()
   Group.new("vimGroup", colors.blue, colors.NONE, styles.underline + styles.bold)
 
   -- diff
-  Group.new("DiffAdd", colors.green, colors.none, styles.bold, colors.green)
-  Group.new("DiffChange", colors.orange, colors.none, styles.bold, colors.orange)
-  Group.new("DiffDelete", colors.red, colors.none, styles.bold, colors.red)
-  Group.new("DiffText", colors.blue, colors.none, styles.bold, colors.blue)
+  Group.new("DiffAdd", colors.none, colors.green:dark():dark(), styles.bold, colors.green)
+  Group.new("DiffChange", colors.none, colors.orange:dark():dark():dark():dark(), styles.bold, colors.orange)
+  Group.new("DiffDelete", colors.none, colors.red:dark():dark():dark():dark(), styles.bold, colors.red)
+  Group.new("DiffText", colors.none, colors.blue:dark():dark():dark():dark(), styles.bold, colors.blue)
 
   -- alias ui
   Group.new("Folder", colors.orange)
