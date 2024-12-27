@@ -1,4 +1,4 @@
-local highlights = require("vitesse.plugins.bufferline")
+local highlights = require("themes.plugins.bufferline")
 
 return {
   ---@deprecated will remove this later

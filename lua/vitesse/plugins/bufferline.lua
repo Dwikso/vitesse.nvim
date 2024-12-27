@@ -1,18 +1,18 @@
-local vitesse_themes = require("vitesse.palette").themes
+local themes_theme = require("vitesse.palette").themes
 
 local active = {
-  fg = vitesse_themes.foreground,
+  fg = themes_theme.foreground,
 }
 
 local inactive = {
-  fg = vitesse_themes.secondaryForeground,
-  bg = vitesse_themes.lowBackground,
+  fg = themes_theme.secondaryForeground,
+  bg = themes_theme.lowBackground,
 }
 
 local M = {
   -- whole bar background
   fill = {
-    bg = vitesse_themes.activeBackground,
+    bg = themes_theme.activeBackground,
   },
 
   -- inactive tab
@@ -20,13 +20,13 @@ local M = {
 
   -- inactive tab separator
   separator = {
-    fg = vitesse_themes.activeBackground,
+    fg = themes_theme.activeBackground,
     bg = inactive.bg,
   },
 
   -- active tab separator
   separator_selected = {
-    fg = vitesse_themes.activeBackground,
+    fg = themes_theme.activeBackground,
   },
 
   buffer_selected = {
@@ -35,25 +35,25 @@ local M = {
 
   -- top-right
   tab = {
-    bg = vitesse_themes.activeBackground,
+    bg = themes_theme.activeBackground,
   },
   tab_selected = active,
   tab_separator = {
-    fg = vitesse_themes.activeBackground,
-    bg = vitesse_themes.activeBackground,
+    fg = themes_theme.activeBackground,
+    bg = themes_theme.activeBackground,
   },
   tab_separator_selected = {
-    fg = vitesse_themes.activeBackground,
+    fg = themes_theme.activeBackground,
   },
 
   -- <-, ->
   trunc_marker = {
-    bg = vitesse_themes.activeBackground,
+    bg = themes_theme.activeBackground,
   },
 
   -- tab close icon
   tab_close = {
-    bg = vitesse_themes.activeBackground,
+    bg = themes_theme.activeBackground,
   },
 
   -- bar close icon
@@ -69,7 +69,7 @@ local M = {
 
   -- duplicated prefix text
   duplicate = {
-    fg = vitesse_themes.ignored,
+    fg = themes_theme.ignored,
     bg = inactive.bg,
   },
 
